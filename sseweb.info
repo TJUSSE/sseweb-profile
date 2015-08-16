@@ -33,6 +33,7 @@ dependencies[] = i18n_translation
 dependencies[] = image
 dependencies[] = imagemagick
 dependencies[] = imagemagick_advanced
+dependencies[] = insert_block
 dependencies[] = jquery_update
 dependencies[] = l10n_update
 dependencies[] = libraries
