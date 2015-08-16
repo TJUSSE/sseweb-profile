@@ -42,6 +42,7 @@ dependencies[] = list
 dependencies[] = locale
 dependencies[] = menu
 dependencies[] = menu_fields
+dependencies[] = menu_force
 dependencies[] = node
 dependencies[] = number
 dependencies[] = options
