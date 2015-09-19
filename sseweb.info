@@ -79,7 +79,6 @@ dependencies[] = search
 dependencies[] = sse_admintype
 dependencies[] = sse_contactfield
 dependencies[] = sse_mark
-dependencies[] = sse_subscription
 dependencies[] = sse_taxonomy
 dependencies[] = statistics
 dependencies[] = taxonomy
