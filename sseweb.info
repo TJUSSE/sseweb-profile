@@ -83,6 +83,7 @@ dependencies[] = sse_admintype
 dependencies[] = sse_contactfield
 dependencies[] = sse_login
 dependencies[] = sse_mark
+dependencies[] = sse_noticefilter
 dependencies[] = sse_taxonomy
 dependencies[] = statistics
 dependencies[] = system
