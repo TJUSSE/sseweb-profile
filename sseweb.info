@@ -93,6 +93,7 @@ dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = term_reference_tree
 dependencies[] = text
+dependencies[] = title
 dependencies[] = token
 dependencies[] = translation
 dependencies[] = update
