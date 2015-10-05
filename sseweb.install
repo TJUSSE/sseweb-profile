@@ -12,14 +12,11 @@
  * @see system_install()
  */
 function sseweb_install() {
-  // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'sse');
-  $admin_theme = 'adminimal';
   $blocks = array(
     array(
       'module' => 'system',
       'delta' => 'main',
-      'theme' => $default_theme,
+      'theme' => 'sse_theme',
       'status' => 1,
       'weight' => 0,
       'region' => 'content',
@@ -29,7 +26,7 @@ function sseweb_install() {
     array(
       'module' => 'search',
       'delta' => 'form',
-      'theme' => $default_theme,
+      'theme' => 'sse_theme',
       'status' => 1,
       'weight' => -1,
       'region' => 'sidebar_first',
@@ -39,7 +36,7 @@ function sseweb_install() {
     array(
       'module' => 'user',
       'delta' => 'login',
-      'theme' => $default_theme,
+      'theme' => 'sse_theme',
       'status' => 1,
       'weight' => 0,
       'region' => 'sidebar_first',
@@ -49,7 +46,7 @@ function sseweb_install() {
     array(
       'module' => 'system',
       'delta' => 'main',
-      'theme' => $admin_theme,
+      'theme' => 'adminimal',
       'status' => 1,
       'weight' => 0,
       'region' => 'content',
@@ -59,7 +56,7 @@ function sseweb_install() {
     array(
       'module' => 'system',
       'delta' => 'help',
-      'theme' => $admin_theme,
+      'theme' => 'adminimal',
       'status' => 1,
       'weight' => 0,
       'region' => 'help',
@@ -69,7 +66,7 @@ function sseweb_install() {
     array(
       'module' => 'user',
       'delta' => 'login',
-      'theme' => $admin_theme,
+      'theme' => 'adminimal',
       'status' => 1,
       'weight' => 10,
       'region' => 'content',
@@ -79,7 +76,7 @@ function sseweb_install() {
     array(
       'module' => 'user',
       'delta' => 'new',
-      'theme' => $admin_theme,
+      'theme' => 'adminimal',
       'status' => 1,
       'weight' => 0,
       'region' => 'dashboard_sidebar',
@@ -89,7 +86,7 @@ function sseweb_install() {
     array(
       'module' => 'search',
       'delta' => 'form',
-      'theme' => $admin_theme,
+      'theme' => 'adminimal',
       'status' => 1,
       'weight' => -10,
       'region' => 'dashboard_sidebar',
@@ -120,10 +117,10 @@ function sseweb_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'sse')
+    ->condition('name', 'sse_theme')
     ->execute();
 
-  variable_set('theme_default', 'sse');
+  variable_set('theme_default', 'sse_theme');
 
   // Enable the admin theme.
   db_update('system')
