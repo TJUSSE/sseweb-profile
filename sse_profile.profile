@@ -9,7 +9,7 @@
  *
  * Allows the profile to alter the site configuration form.
  */
-function sseweb_form_install_configure_form_alter(&$form, $form_state) {
+function sse_profile_form_install_configure_form_alter(&$form, $form_state) {
   $form['site_information']['site_name']['#default_value'] = '同济大学软件学院';
   $form['site_information']['site_mail']['#default_value'] = 'sse_admin@tongji.edu.cn';
   $form['server_settings']['site_default_country']['#default_value'] = 'CN';

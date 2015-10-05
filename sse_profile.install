@@ -11,7 +11,7 @@
  *
  * @see system_install()
  */
-function sseweb_install() {
+function sse_profile_install() {
   $blocks = array(
     array(
       'module' => 'system',
