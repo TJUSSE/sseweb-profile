@@ -80,7 +80,6 @@ dependencies[] = rabbit_hole
 dependencies[] = rdf
 dependencies[] = rh_node
 dependencies[] = rh_taxonomy
-dependencies[] = search
 dependencies[] = sse_admintype
 dependencies[] = sse_contactfield
 dependencies[] = sse_login
