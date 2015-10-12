@@ -95,6 +95,7 @@ dependencies[] = sse_subscription
 dependencies[] = sse_taxonomy
 dependencies[] = sse_themehelper
 dependencies[] = sse_util
+dependencies[] = sse_video_filter
 dependencies[] = statistics
 dependencies[] = stringoverrides
 dependencies[] = system
