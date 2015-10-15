@@ -89,6 +89,7 @@ dependencies[] = sse_admintype
 dependencies[] = sse_contactfield
 dependencies[] = sse_disable_node_page
 dependencies[] = sse_fff
+dependencies[] = sse_gmap_filter
 dependencies[] = sse_login
 dependencies[] = sse_mark
 dependencies[] = sse_noticefilter
